@@ -39,5 +39,19 @@ class DiseasesRepository:
             if disease["name"] == name:
                 return disease
         return None
+
+    def getbysymptoms(self, symptoms: list):
+        diseaseFile = open("diseases.json", "r")
+        diseaseload = json.load(diseaseFile)
+        diseaseFile.close()
+        similardiseases=[]
+        for disease in diseaseload:
+            intersection=list(set(disease["symptoms"]).intersection(symptoms))
+            if len(intersection)>0:
+                similardiseases.append(disease)
+        return similardiseases
+
+                
+
             
 
