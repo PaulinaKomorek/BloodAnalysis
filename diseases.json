@@ -1,0 +1,13 @@
+[
+    {
+        "name": "anemia",
+        "description": "blood ilness",
+        "symptoms": [
+            "lower amount of red cells"
+        ],
+        "depends": [
+            "lower level of Fe",
+            "lower amount of red cells"
+        ]
+    }
+]
