@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb0e949e-7143-41de-9778-7eef5ede4bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Repositories/elements.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/BloodElement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/BloodElement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Repositories/BloodElementsRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/BloodElementsRepository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositories/elements.json" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/elements.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Repositories/BloodElementsRepository.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="333">
+              <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -29,8 +30,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Repositories/elements.json">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2178">
+              <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="69" selection-start-column="69" selection-end-column="69" />
+              <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -38,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/BloodElement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="126">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -55,6 +65,7 @@
         <option value="$PROJECT_DIR$/Models/BloodElement.py" />
         <option value="$PROJECT_DIR$/Repositories/elements.json" />
         <option value="$PROJECT_DIR$/Repositories/BloodElementsRepository.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -63,11 +74,10 @@
     <option name="height" value="900" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -84,6 +94,32 @@
               <item name="BloodAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="BloodAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="BloodAnalysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/GitHub/BloodAnalysis" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="BloodAnalysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/GitHub/BloodAnalysis" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BloodAnalysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/GitHub/BloodAnalysis" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BloodAnalysis" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/GitHub/BloodAnalysis" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Repositories" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -175,12 +211,12 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12403101" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19591261" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21084337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -205,27 +241,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repositories/BloodElementsRepository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Repositories/elements.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="69" selection-start-column="69" selection-end-column="69" />
+        <state relative-caret-position="2178">
+          <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Models/BloodElement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Repositories/BloodElementsRepository.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>

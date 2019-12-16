@@ -9,7 +9,7 @@ class BloodElementsRepository:
         elements = json.load(open("elements.json", "r"))
         for element in elements:
             if element["name"] == name:
-                return True
+                return "Repository already contains " + name
             """elif element["unit"] == unit:
                 return True
             elif element["max_value"] == max_value:
@@ -28,23 +28,47 @@ class BloodElementsRepository:
         elements_file.close()
         elements.append(element.__dict__)
         elements_file = open("elements.json", "w")
-        json.dump(elements, elements_file)
+        json.dump(elements, elements_file, indent=4)
         elements_file.close()
         return True
 
-    def get(self, name : str) -> BloodElement:
+    def get(self, name: str) -> BloodElement:
         raise NotImplementedError
 
     def delete(self, name: str):
-        raise NotImplementedError
+        elements_file = open("elements.json", "r")
+        elements = json.load(elements_file)
+        elements_file.close()
+        for element in elements:
+            if element["name"] == name:
+                elements.remove(element)
+        elements_file = open("elements.json", "w")
+        json.dump(elements, elements_file)
+        elements_file.close()
+
+    def display(self, show=True):
+        elements = json.load(open("elements.json", "r"))
+        if show:
+            for element in elements:
+                if len(elements) > 0:
+                    for i in range(len(elements)):
+                        print(str(i+1) + ": " + element["name"] + " " + element["unit"])
+                else:
+                    print("Repository contains nothing.")
+        """else:
+            for element in elements:
+                yield element["name"]"""
 
 
-newElement = BloodElement("name", "unit", 0, 0)
-newElement.name = "krwinka"
-newElement.unit = "mg/l"
-newElement.max_value = 3
+newElement = BloodElement("Plytki krwi", "tys/mm3", 140, 450)
+
 
 repository = BloodElementsRepository()
 
 repository.add(newElement)
-print(repository.contains("krwinka"))
+
+"""
+
+repository = BloodElementsRepository()
+
+repository.display()"""
