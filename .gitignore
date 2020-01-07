@@ -1,3 +1,6 @@
+/.vscode
+/Models/__pycache__/*.pyc
+/Repositories/__pycache__/*.pyc
 .idea/
 /.idea
 /*.DS_Store
