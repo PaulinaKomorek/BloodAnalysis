@@ -1,0 +1,3 @@
+/.vscode
+/Models/__pycache__/*.pyc
+/Repositories/__pycache__/*.pyc

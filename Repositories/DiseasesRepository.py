@@ -35,10 +35,14 @@ class DiseasesRepository:
 
     def get(self, name: str) -> Disease:
         diseases = json.load(open("diseases.json", "r"))
-        for disease in diseases:
-            if disease["name"] == name:
-                return disease
-        return None
+        disease=next(filter(lambda d:d["name"]==name, diseases), None)
+        return disease
+        # for disease in diseases:
+        #     if disease["name"] == name:
+        #         d=Disease()
+        #         d.__dict__=disease
+        #         return d
+        # return None
 
     def getbysymptoms(self, symptoms: list):
         diseaseFile = open("diseases.json", "r")
@@ -48,10 +52,28 @@ class DiseasesRepository:
         for disease in diseaseload:
             intersection=list(set(disease["symptoms"]).intersection(symptoms))
             if len(intersection)>0:
-                similardiseases.append(disease)
+                d=Disease()
+                d.__dict__=disease
+                similardiseases.append(d)
+
         return similardiseases
 
-                
+    def getbydependences(self, dependences: list):
+        diseaseFile = open("diseases.json", "r")
+        diseaseload = json.load(diseaseFile)
+        diseaseFile.close()
+        similardiseases=[]
+        for disease in diseaseload:
+            intersection=list(set(disease["depends"]).intersection(dependences))
+            if len(intersection)>0:
+                d=Disease()
+                d.__dict__=disease
+                similardiseases.append(d)
+        return similardiseases
 
-            
 
+    def getbycondition(self, condition):
+        diseases = json.load(open("diseases.json", "r"))
+        disease = next(filter(condition, diseases), None)
+        return disease
+      
